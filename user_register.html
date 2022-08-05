@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel='stylesheet' id='bootstrap-css' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- The 2 most important css styles -->
+    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/plugin-customized.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/slick-slider.css' type='text/css' media='all' />
+
+    <title>منصة خدمات اللغة العربية</title>
+
+</head>
+
+<body dir="rtl">
+
+    <section class="header">
+
+        <div class="header-top" id="myHeader">
+            <div class="container-fluid">
+                <div class="flex" id="navbar">
+
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt="" width="250"></a>
+
+                    <nav class="menu-navigation">
+                        <ul class="primary-list">
+                            <li class=""><a href="index.html">الرئيسية</a></li>
+                            <li class="has-submenu">
+                                <a href="projects.html">المشاريع</a>
+                                <ul class="sub-menu">
+                                    <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
+                                    <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="seller-search.html">الخبراء</a>
+                                <ul class="sub-menu">
+                                    <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
+                                    <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
+                                    <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
+                            <li><a href="about.html">عن المنصة</a></li>
+                            <!-- <li class="animation start-home"></li> -->
+                        </ul>
+                        <ul class="secondary-list">
+                            <li>
+                                <a href="user_login.html" class="">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                    <span>تسجيل الدخول</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user_register.html" class="">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span>تسجيل جديد</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="favorite.html" class="favorite-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span class="item_total">0</span>
+                                    <span class="">المفضلة</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#_" class="">
+                                    <img class="ar-lang d-none" src="images/ar-lang.png" alt="">
+                                    <img class="en-lang" src="images/en-lang.png" alt="">
+                                    <span class="lang">English</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu">
+                            <a href="#_" class="toggleMobileMenu"><i class="fa-solid fa-bars"></i></a>
+                            <div class="mobileMenu">
+                                <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li class="has-submenu">
+                                        <a href="projects.html">المشاريع</a>
+                                        <ul class="sub-menu">
+                                            <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
+                                            <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
+                                    <li class="has-submenu">
+                                        <a href="seller-search.html">الخبراء</a>
+                                        <ul class="sub-menu">
+                                            <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
+                                            <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
+                                            <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">عن المنصة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="main container">
+        <div class="register-box">
+            <!-- <form action="">
+
+            </form> -->
+            <div class="row">
+
+                <div class="col-md-6 col-xs-12 form-section">
+                    <h1 class="form-title">إنشاء حساب جديد</h1>
+                    <!-- <hr class=""> -->
+                    <div class="container-form">
+                        <form autocomplete="off">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group"><label>الاسم <em class="field-mandatory">*</em></label><input class="form-control" placeholder="أكتب اسمك باللغة العربية" type="text" name="first_name" value=""></div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group"><label>اسم العائلة <em class="field-mandatory">*</em></label><input class="form-control" placeholder="أكتب اسم العائلة هنا باللغة العربية" type="text" name="last_name" value=""></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group"><label>البريد الإلكتروني <em class="field-mandatory">*</em></label><input class="form-control" placeholder="أدخل البريد الإلكتروني الخاص بك" type="email" name="email" value=""></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group"><label>كلمة المرور <em class="field-mandatory">*</em></label><input class="form-control" placeholder="أدخل كلمة المرور الخاصة بك" type="password" name="password" value=""></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <div class="terms-checkbox"><label><input type="checkbox" class="checkbox-input" name="terms" value="false"><span class="checkbox-label">قرأت وأوافق على&nbsp;<a target="" href="#_">شروط الاستخدام</a>&nbsp;و&nbsp;<a target="" href="#_">بيان الخصوصية</a></span></label></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-primary btn-block">تسجيل</button>
+                                    <a href="user_login.html" class="btn btn-primary btn-block">تسجيل دخول</a>
+                                </div>
+                                <!-- <div class="col-md-4 col-xs-12"><button type="submit" class="btn btn-primary btn-block">تسجيل</button></div>
+                                <div class="col-md-8 col-xs-12"><a href="user_login.html" class="btn btn-primary btn-block float-start">تسجيل دخول</a></div> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12 img-section">
+                    <div class="img-container">
+                        <img src="images/register_bg.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-content row">
+                <div class="col-lg-6 col-md-12 col-sm-12 address">
+                    <div class="logo">
+                        <img src="images/website-logo.png" alt="">
+                    </div>
+                    <p id="location-address">عنوان المجمع</p>
+                    <p id="support-email">فريق الدعم</p>
+                    <div class="inputs">
+                        <input type="text" placeholder="أكتب البريد الإلكتروني" class="search-field">
+                        <a href="#_" class="btn search-btn">تسجيل</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 flex-row links">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>الخدمات</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>المجتمع</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>الدعم</li>
+                            <li>الأسئلة الشائعة</li>
+                            <li>شروط الإستخدام</li>
+                            <li>الخصوصية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite flex">
+                <p class="content">الحقوق محفوظة - مجمع الملك سلمان العالمي للغة العربية &#169; 2022</p>
+                <div class="social-media flex">
+                    <a href="#_"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#_"><i class="fa-brands fa-youtube"></i></i></a>
+                    <a href="#_"><i class="fa-brands fa-facebook-square"></i></i></a>
+                    <a href="#_"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script type='text/javascript' src='assets/js/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='assets/js/plugins.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='assets/js/plugin.js' id='jquery-core-js'></script>
+</body>
+
+</html>

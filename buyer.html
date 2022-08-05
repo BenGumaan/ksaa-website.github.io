@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel='stylesheet' id='bootstrap-css' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- The 2 most important css styles -->
+    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/plugin-customized.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/slick-slider.css' type='text/css' media='all' />
+
+    <title>منصة خدمات اللغة العربية</title>
+
+</head>
+
+<body dir="rtl">
+
+    <section class="header">
+
+        <div class="header-top" id="myHeader">
+            <div class="container-fluid">
+                <div class="flex" id="navbar">
+
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt="" width="250"></a>
+
+                    <nav class="menu-navigation">
+                        <ul class="primary-list">
+                            <li class=""><a href="index.html">الرئيسية</a></li>
+                            <li class="has-submenu">
+                                <a href="projects.html">المشاريع</a>
+                                <ul class="sub-menu">
+                                    <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
+                                    <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="seller-search.html">الخبراء</a>
+                                <ul class="sub-menu">
+                                    <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
+                                    <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
+                                    <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
+                            <li><a href="about.html">عن المنصة</a></li>
+                            <!-- <li class="animation start-home"></li> -->
+                        </ul>
+                        <ul class="secondary-list">
+                            <li>
+                                <a href="user_login.html" class="">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                    <span>تسجيل الدخول</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user_register.html" class="">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span>تسجيل جديد</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="favorite.html" class="favorite-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span class="item_total">0</span>
+                                    <span class="">المفضلة</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#_" class="">
+                                    <img class="ar-lang d-none" src="images/ar-lang.png" alt="">
+                                    <img class="en-lang" src="images/en-lang.png" alt="">
+                                    <span class="lang">English</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu">
+                            <a href="#_" class="toggleMobileMenu"><i class="fa-solid fa-bars"></i></a>
+                            <div class="mobileMenu">
+                                <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li class="has-submenu">
+                                        <a href="projects.html">المشاريع</a>
+                                        <ul class="sub-menu">
+                                            <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
+                                            <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
+                                    <li class="has-submenu">
+                                        <a href="seller-search.html">الخبراء</a>
+                                        <ul class="sub-menu">
+                                            <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
+                                            <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
+                                            <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">عن المنصة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services-posts -->
+    <section class="main">
+        <div class="buyer-cover" style="background-image: url(./images/user-cover-img.jpg)"></div>
+        <div class="container">
+            <div class="buyer-profile mb-5">
+                <div class="row">
+                    <div class="col-xl-2 my-auto txt-center buyer-img">
+                        <img width="250" height="250" src="images/user-1.png" sizes="(max-width: 250px) 100vw, 250px">
+                    </div>
+                    <div class="col-xl-10 my-auto">
+                        <div class="row">
+                            <!-- buyer-information -->
+                            <div class="col-xl-7 my-auto buyer-info txt-center">
+                                <h3 class="mb-0 d-flex align-content-center gap-2">
+                                    <span>محمد الشهراني</span>
+                                    <i class="fas fa-check-circle verified align-self-center" title="Verified"></i>
+                                </h3>
+                                <p class="join-date">تاريخ التسجيل: ابريل 2021</p>
+                                <ul class="list-inline meta">
+                                    <li class="list-inline-item light-yellow">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                        <span>السعودية</span>
+                                    </li>
+                                    <li class="list-inline-item light-cyan">
+                                        <i class="fas fa-users"></i>
+                                        <span>مؤسسة</span>
+                                    </li>
+                                    <li class="list-inline-item light-blue">
+                                        <i class="fas fa-tags"></i>
+                                        <span>برمجيات</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- call-to-actions buttons -->
+                            <div class="col-xl-2">
+                                <ul class="list-unstyled mid-meta">
+                                    <li>
+                                        <a href="#" class="message-button" data-bs-toggle="modal" data-bs-target="#message177">
+                                            <i class="fa-solid fa-comments"></i>
+                                            <span>رسالة</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="modal fade" id="message177" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">إرسال رسالة لمقدم الخدمة</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>يجب عليك تسجيل الدخول أولاً لتتمكن من إرسال رسالة</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Statistics -->
+                            <div class="col-xl-3 buyer-statistics">
+                                <ul class="list-unstyled stats mb-0">
+                                    <li class="light-red">طلبات:<strong class="float-end">3</strong></li>
+                                    <li class="light-yellow">مشاريع قيد التنفيذ:<strong class="float-end">0</strong></li>
+                                    <li class="light-cyan">مشاريع مكتملة:<strong class="float-end">3</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-12">
+                    <div class="white-padding buyer-details">
+                        <ul class="nav nav-tabs mb-3">
+                            <li class="nav-item">
+                                <a class="nav-link show active" data-toggle="tab" data-target="#about-me" role="tab" aria-selected="false">عني</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" data-target="#project" role="tab" aria-selected="true">المشاريع المنشورة</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="about-me" role="tabpanel">
+                                <p><b>نبذة عني</b></p>
+                                <p> شغوف باللغة العربية وآدابها، وقد دفعه هذا الشغف لاحتراف مهنة التدقيق اللغوي والتحرير الأدبي. تعاون مع عشرات الكتاب والمؤلفين والباحثين من أجل الارتقاء بالنص وتطوير الأسلوب لدى كلٍّ منهم بما يناسب طبيعة العمل الخاص به. قام
+                                    بتدقيق أكثر من مائةٍ وخمسةَ عشرَ مصنفًا، تنوعت تلك المصنفات بين الروايات والقصص والكتب والرسائل العلمية والمقالات الصحفية، وتضمنت ما يزيد عن أربعة ملايين كلمة؛ فاكتسب خبرة واسعة، وحاز معرفة عميقة باحتياجات الكتاب العرب
+                                    لصقل مواهبهم وتطوير أدائهم.</p>
+                            </div>
+                            <div class="tab-pane fade mt-5" id="project" role="tabpanel">
+
+                                <!-- Post 1 -->
+                                <div class="post">
+                                    <div class="row post-container">
+                                        <div class="col-sm-8 my-auto post-img">
+
+                                            <div class="row post-content">
+                                                <div class="col-3 col-sm-2">
+                                                    <div class="img-container circled-border" style="width: fit-content;">
+                                                        <img src="images/user-2(circle).png" alt="" style="
+                                                            border-radius: 50%;
+                                                            width: 80px;
+                                                            height: 80px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-sm-10 post-info">
+                                                    <a href="projects - details.html" class="row post-title">ترجمة ملفات من العربية إلى الإنجليزية</a>
+                                                    <div class="row user-info">
+                                                        <div class="col-4 d-flex align-items-center poster-name" style="padding: 0;">
+                                                            <i class="fa-solid fa-user"></i>
+                                                            <p class="">عبدالله الشهراني</p>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-items-center post-time" style="padding: 0;">
+                                                            <i class="fa-solid fa-clock"></i>
+                                                            <p class="">منذ ساعة</p>
+                                                        </div>
+                                                        <div class="col-4 post-bids" style="padding: 0;">
+                                                            <p class="">(3 عروض)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-4 my-auto post-content sm-hide">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="col-12 post-delivery">
+                                                        <p class="row">مدة التنفيذ</p>
+                                                        <p class="row delivery-time">3-1 أيام</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-8">
+                                                    <div class="col-12 post-actions">
+                                                        <a href="#_" class="add-to-favorite d-flex align-items-center">
+                                                            <span>أضف إلى المفضلة</span>
+                                                        </a>
+                                                        <a href="#_" class="post-details">
+                                                            <span>تفاصيل</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Post 2 -->
+                                <div class="post">
+                                    <div class="row post-container">
+                                        <div class="col-sm-8 my-auto post-img">
+
+                                            <div class="row post-content">
+                                                <div class="col-3 col-sm-2">
+                                                    <div class="img-container circled-border" style="width: fit-content;">
+                                                        <img src="images/user-2(circle).png" alt="" style="
+                                                            border-radius: 50%;
+                                                            width: 80px;
+                                                            height: 80px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-sm-10 post-info">
+                                                    <a href="projects - details.html" class="row post-title">ترجمة ملفات من العربية إلى الإنجليزية</a>
+                                                    <div class="row user-info">
+                                                        <div class="col-4 d-flex align-items-center poster-name" style="padding: 0;">
+                                                            <i class="fa-solid fa-user"></i>
+                                                            <p class="">عبدالله الشهراني</p>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-items-center post-time" style="padding: 0;">
+                                                            <i class="fa-solid fa-clock"></i>
+                                                            <p class="">منذ ساعة</p>
+                                                        </div>
+                                                        <div class="col-4 post-bids" style="padding: 0;">
+                                                            <p class="">(3 عروض)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-4 my-auto post-content sm-hide">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="col-12 post-delivery">
+                                                        <p class="row">مدة التنفيذ</p>
+                                                        <p class="row delivery-time">3-1 أيام</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-8">
+                                                    <div class="col-12 post-actions">
+                                                        <a href="#_" class="add-to-favorite d-flex align-items-center">
+                                                            <span>أضف إلى المفضلة</span>
+                                                        </a>
+                                                        <a href="#_" class="post-details">
+                                                            <span>تفاصيل</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-content row">
+                <div class="col-lg-6 col-md-12 col-sm-12 address">
+                    <div class="logo">
+                        <img src="images/website-logo.png" alt="">
+                    </div>
+                    <p id="location-address">عنوان المجمع</p>
+                    <p id="support-email">فريق الدعم</p>
+                    <div class="inputs">
+                        <input type="text" placeholder="أكتب البريد الإلكتروني" class="search-field">
+                        <a href="#_" class="btn search-btn">تسجيل</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 flex-row links">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>الخدمات</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>المجتمع</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>الدعم</li>
+                            <li>الأسئلة الشائعة</li>
+                            <li>شروط الإستخدام</li>
+                            <li>الخصوصية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite flex">
+                <p class="content">الحقوق محفوظة - مجمع الملك سلمان العالمي للغة العربية &#169; 2022</p>
+                <div class="social-media flex">
+                    <a href="#_"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#_"><i class="fa-brands fa-youtube"></i></i></a>
+                    <a href="#_"><i class="fa-brands fa-facebook-square"></i></i></a>
+                    <a href="#_"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script type='text/javascript' src='assets/js/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='assets/js/plugins.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='assets/js/plugin.js' id='jquery-core-js'></script>
+
+</body>
+
+</html>

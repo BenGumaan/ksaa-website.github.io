@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel='stylesheet' id='bootstrap-css' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- The 2 most important css styles -->
+    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/plugin-customized.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/slick-slider.css' type='text/css' media='all' />
+
+    <title>منصة خدمات اللغة العربية</title>
+
+</head>
+
+<body dir="rtl">
+
+    <section class="header">
+
+        <div class="header-top" id="myHeader">
+            <div class="container-fluid">
+                <div class="flex" id="navbar">
+
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt="" width="250"></a>
+
+                    <nav class="menu-navigation">
+                        <ul class="primary-list">
+                            <li class=""><a href="index.html">الرئيسية</a></li>
+                            <li class="has-submenu">
+                                <a href="projects.html">المشاريع</a>
+                                <ul class="sub-menu">
+                                    <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
+                                    <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="seller-search.html">الخبراء</a>
+                                <ul class="sub-menu">
+                                    <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
+                                    <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
+                                    <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
+                            <li><a href="about.html">عن المنصة</a></li>
+                            <!-- <li class="animation start-home"></li> -->
+                        </ul>
+                        <ul class="secondary-list">
+                            <li>
+                                <a href="user_login.html" class="">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                    <span>تسجيل الدخول</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user_register.html" class="">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span>تسجيل جديد</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="favorite.html" class="favorite-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span class="item_total">0</span>
+                                    <span class="">المفضلة</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#_" class="">
+                                    <img class="ar-lang d-none" src="images/ar-lang.png" alt="">
+                                    <img class="en-lang" src="images/en-lang.png" alt="">
+                                    <span class="lang">English</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu">
+                            <a href="#_" class="toggleMobileMenu"><i class="fa-solid fa-bars"></i></a>
+                            <div class="mobileMenu">
+                                <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li class="has-submenu">
+                                        <a href="projects.html">المشاريع</a>
+                                        <ul class="sub-menu">
+                                            <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
+                                            <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
+                                    <li class="has-submenu">
+                                        <a href="seller-search.html">الخبراء</a>
+                                        <ul class="sub-menu">
+                                            <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
+                                            <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
+                                            <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">عن المنصة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="header-bottom-black ">
+        <h1 class="" style="font-size: 70px;color:white;">بحث عن مقدمي خدمة</h1>
+        <div class="flex justify-content-start gap-2" style="color:white;">
+            <p class="m-0">الرئيسية</p>
+            <span>>></span>
+            <p class="m-0">بحث عن مقدمي خدمة</p>
+        </div>
+    </div>
+    <!-- Services-posts -->
+    <section class="main">
+        <div class="container">
+
+            <!-- Posts-content -->
+            <div class="row justify-content-center posts-container">
+
+                <!-- filter -->
+                <div class="col-xl-4 position-relative search-filter">
+                    <aside id="secondary" class="filter-area">
+                        <div id="" class="filter">
+                            <h4 class="filter-title">التصنيف بواسطة:</h4>
+                            <form id="" enctype="multipart/form-data" data-nonce="">
+                                <!-- السعر -->
+                                <div class="filter-box">
+                                    <label>السعر</label>
+                                    <span class="irs irs--round js-irs-0">
+                                            <span class="irs">
+                                                <span class="irs-line" tabindex="0"></span>
+                                    <span class="irs-min" style="visibility: hidden;">0</span>
+                                    <span class="irs-max" style="visibility: hidden;">300</span>
+                                    <span class="irs-from" style="visibility: visible; left: 0.989293%;">0</span>
+                                    <span class="irs-to" style="visibility: visible; left: 90.8655%;">300</span>
+                                    <span class="irs-single" style="visibility: hidden; left: 41.2198%;">0 — 300</span>
+                                    </span>
+                                    <span class="irs-grid"></span>
+                                    <span class="irs-bar" style="left: 3.82181%; width: 92.3564%;"></span>
+                                    <span class="irs-shadow shadow-from" style="display: none;"></span>
+                                    <span class="irs-shadow shadow-to" style="display: none;"></span>
+                                    <span class="irs-handle from" style="left: 0%;"><i></i><i></i><i></i></span>
+                                    <span class="irs-handle to" style="left: 92.3564%;"><i></i><i></i><i></i></span>
+                                    </span>
+
+                                    <div class="price-range irs-hidden-input" data-max-value="300" tabindex="-1"></div>
+
+                                    <div class="row from-to-price-range">
+                                        <input type="hidden" class="from-price" name="price-from" value="0">
+                                        <input type="hidden" class="to-price" name="price-to" value="300">
+                                        <div class="col-sm-6 from-price-container"><input type="number" class="from-price form-control text-center" name="price-from" disabled=""></div>
+                                        <div class="col-sm-6 to-price-container"><input type="number" class="to-price form-control text-center" name="price-to" disabled=""></div>
+                                    </div>
+
+                                </div>
+
+                                <!-- المهارات -->
+                                <div class="filter-box">
+                                    <label>المهارات</label>
+                                    <div class="checkbox-items">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="123" name="service_categories[]" value="123">
+                                            <label class="form-check-label" for="123">ترجمة</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="124" name="service_categories[]" value="124">
+                                            <label class="form-check-label" for="124">تدقيق لغوي</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="125" name="service_categories[]" value="125">
+                                            <label class="form-check-label" for="125">كتابة محتوى</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="126" name="service_categories[]" value="126">
+                                            <label class="form-check-label" for="126">بحث</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="127" name="service_categories[]" value="127">
+                                            <label class="form-check-label" for="127">تشكيل وتدقيق</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="128" name="service_categories[]" value="128">
+                                            <label class="form-check-label" for="128">صياغة محتوى</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- مقدمي الخدمة -->
+                                <div class="filter-box">
+                                    <label>مقدمي الخدمة</label>
+                                    <div class="checkbox-items">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="137" name="delivery_time[]" value="137">
+                                            <label class="form-check-label" for="137">هوية موثقة</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="141" name="delivery_time[]" value="141">
+                                            <label class="form-check-label" for="141">متصل الآن</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="139" name="delivery_time[]" value="139">
+                                            <label class="form-check-label" for="139">وظفتهم سابقاً</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="140" name="delivery_time[]" value="140">
+                                            <label class="form-check-label" for="140">أضافوا عروضاً على مشاريعي</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- مستوى مقدم الخدمة -->
+                                <div class="filter-box">
+                                    <label>مستوى مقدم الخدمة</label>
+                                    <div class="checkbox-items">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="137" name="delivery_time[]" value="137">
+                                            <label class="form-check-label" for="137">نشط</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="141" name="delivery_time[]" value="141">
+                                            <label class="form-check-label" for="141">متمرس</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="138" name="delivery_time[]" value="138">
+                                            <label class="form-check-label" for="138">متميز</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="138" name="delivery_time[]" value="138">
+                                            <label class="form-check-label" for="138">محترف</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- التقييم -->
+                                <div class="filter-box">
+                                    <label>التقييم</label>
+                                    <div class="rating">
+                                        <span class="rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- الموقع -->
+                                <div class="filter-box">
+                                    <label>الموقع</label>
+                                    <select name="service_locations" class="form-control">
+                                        <option value="">الموقع</option>
+                                        <option value="162">السعودية</option>
+                                        <option value="149">البحرين</option>
+                                        <option value="163">الكويت</option>
+                                        <option value="153">قطر</option>
+                                        <option value="167">الإمارات</option>
+                                        <option value="169">اليمن</option>
+                                        <option value="151">مصر</option>
+                                        <option value="152">المغرب</option>
+                                        <option value="154">تونس</option>
+                                        <option value="155">الصومال</option>
+                                        <option value="156">السودان</option>
+                                        <option value="158">موريتانيا</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- result -->
+                <div class="col-xl-8 search-result">
+                    <!-- Post 1 -->
+                    <div class="post">
+                        <div class="row post-container">
+                            <div class="col-md-3 my-auto post-img">
+                                <div class="img-container">
+                                    <a href="seller.html">
+                                        <img src="images/user-1-no_bg.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 my-auto post-content">
+
+                                <div class="row">
+
+                                    <div class="col-lg-9 post-info-right">
+                                        <a href="seller.html" class="post-title">مترجم ومدقق لغوي</a>
+                                        <div class="post-subtitle">محمد الزهراني</div>
+                                        <div>
+                                            <p class="">عضو منذ مارس 2021</p>
+                                        </div>
+                                        <div class="r-footer">
+                                            <div class="level">
+                                                <i class="fa-solid fa-user-shield"></i>
+                                                <p>محترف</p>
+                                            </div>
+                                            <div class="country">
+                                                <i class="fa-solid fa-earth-asia"></i>
+                                                <p>السعودية</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 post-info-left">
+                                        <div class="price">
+                                            <p>35 ريال</p>
+                                            <p>(للساعة)</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <a href="#_" class="post-details sm-30">
+                                            <span>وظفني</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="fav">
+                            <a href="#" class="">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Post 2 -->
+                    <div class="post">
+                        <div class="row post-container">
+                            <div class="col-md-3 my-auto post-img">
+                                <div class="img-container">
+                                    <a href="seller.html">
+                                        <img src="images/user-2-no_bg.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 my-auto post-content">
+
+                                <div class="row">
+
+                                    <div class="col-lg-9 post-info-right">
+                                        <a href="seller.html" class="post-title">كاتب محتوى</a>
+                                        <div class="post-subtitle">سعود الشمري</div>
+                                        <div>
+                                            <p class="">عضو منذ مارس 2021</p>
+                                        </div>
+                                        <div class="r-footer">
+                                            <div class="level">
+                                                <i class="fa-solid fa-user-shield"></i>
+                                                <p>نشط</p>
+                                            </div>
+                                            <div class="country">
+                                                <i class="fa-solid fa-earth-asia"></i>
+                                                <p>السعودية</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 post-info-left">
+                                        <div class="price">
+                                            <p>20 ريال</p>
+                                            <p>(للساعة)</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star" style="color: var(--separator);"></i>
+                                                <i class="fa-solid fa-star" style="color: var(--separator);"></i>
+                                            </span>
+                                        </div>
+                                        <a href="#_" class="post-details sm-30">
+                                            <span>وظفني</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="fav">
+                            <a href="#" class="">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Post 3 -->
+                    <div class="post">
+                        <div class="row post-container">
+                            <div class="col-md-3 my-auto post-img">
+                                <div class="img-container">
+                                    <a href="seller.html">
+                                        <img src="images/user-1-no_bg.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 my-auto post-content">
+
+                                <div class="row">
+
+                                    <div class="col-lg-9 post-info-right">
+                                        <a href="seller.html" class="post-title">مدقق لغوي</a>
+                                        <div class="post-subtitle">مصطفى العلي</div>
+                                        <div>
+                                            <p class="">عضو منذ مارس 2021</p>
+                                        </div>
+                                        <div class="r-footer">
+                                            <div class="level">
+                                                <i class="fa-solid fa-user-shield"></i>
+                                                <p>متمرس</p>
+                                            </div>
+                                            <div class="country">
+                                                <i class="fa-solid fa-earth-asia"></i>
+                                                <p>السعودية</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 post-info-left">
+                                        <div class="price">
+                                            <p>45 ريال</p>
+                                            <p>(للساعة)</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star" style="color: var(--separator);"></i>
+                                                <!-- <i class="fa-solid fa-star-half-stroke fa-flip-horizontal"></i> -->
+                                            </span>
+                                        </div>
+                                        <a href="#_" class="post-details sm-30">
+                                            <span>وظفني</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="fav">
+                            <a href="#" class="">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <nav class="navigation pagination" aria-label="Posts">
+                            <!-- <h2 class="screen-reader-text">Posts navigation</h2> -->
+                            <div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+                                <a class="page-numbers" href="#">2</a>
+                                <a class="next page-numbers" href="#">Next ❯</a></div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-content row">
+                <div class="col-lg-6 col-md-12 col-sm-12 address">
+                    <div class="logo">
+                        <img src="images/website-logo.png" alt="">
+                    </div>
+                    <p id="location-address">عنوان المجمع</p>
+                    <p id="support-email">فريق الدعم</p>
+                    <div class="inputs">
+                        <input type="text" placeholder="أكتب البريد الإلكتروني" class="search-field">
+                        <a href="#_" class="btn search-btn">تسجيل</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 flex-row links">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>الخدمات</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>المجتمع</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                            <li>عنوان فرعي</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <ul class="list">
+                            <li>الدعم</li>
+                            <li>الأسئلة الشائعة</li>
+                            <li>شروط الإستخدام</li>
+                            <li>الخصوصية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite flex">
+                <p class="content">الحقوق محفوظة - مجمع الملك سلمان العالمي للغة العربية &#169; 2022</p>
+                <div class="social-media flex">
+                    <a href="#_"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#_"><i class="fa-brands fa-youtube"></i></i></a>
+                    <a href="#_"><i class="fa-brands fa-facebook-square"></i></i></a>
+                    <a href="#_"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script type='text/javascript' src='assets/js/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='assets/js/plugins.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='assets/js/plugin.js' id='jquery-core-js'></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rebeccapurple;
+    min-height: 100vh;
+}
+
+.seller-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.seller-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+}
+
+.seller-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.seller-card h2 a {
+    color: #333;
+}
+
+i.verified {
+    font-size: 16px!important;
+    margin-right: 10px;
+    color: rebeccapurple;
+}
+
+.seller-card ul {
+    margin-bottom: 0;
+    margin-top: 20px;
+    display: contents;
+}
+
+.seller-card ul li {
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 25px;
+}
+
+.list-inline-item:last-child {
+    margin-right: 15px;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0 !important;
+}
+
+.seller-card ul li i {
+    margin-right: 5px;
+}
+
+.pr-15 {
+    padding-right: 15px;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.sellers-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Main Style */
+
+a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.seller-card h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+    width: 70%;
+}
+
+.seller-card .star-rating {
+    margin: 20px auto;
+}
+
+.star-rating {
+    overflow: hidden;
+    position: relative;
+    height: 1.618em;
+    line-height: 1.618;
+    font-size: 1em;
+    /* width: 5.3em; */
+    font-family: star;
+    font-weight: 400;
+    color: #ffc000;
+}
+
+.empty-star {
+    color: #DCDCDC;
+}
+
+.seller-card ul li {
+    background: rgb(103 135 254 / 10%);
+}
+
+
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+
+/**
+ * responsive when screen is equal to 420px or less
+ */
+
+@media (max-width: 420px) {
+    .seller-card img {
+        width: 130px;
+        height: 130px;
+    }
+}
