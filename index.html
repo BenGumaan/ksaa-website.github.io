@@ -11,40 +11,27 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <!-- Bootstrap CSS -->
     <link rel='stylesheet' id='bootstrap-css' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
 
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-
-    <!-- The 2 most important css styles -->
-    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/plugin-customized.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/slick-slider.css' type='text/css' media='all' />
+    <!-- Custom CSS Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--  Slick CSS -->
+    <link rel='stylesheet' href='assets/css/slick-slider.css' type='text/css' media='all' />
 
     <title>منصة خدمات اللغة العربية</title>
 
-    <!-- 
-    <style>
-        .swiper {
-            width: 100%;
-            height: 440px;
-        }
-        
-        .swiper-slide {
-            width: 305.25px;
-            margin-left: 0px !important;
-        }
-    </style> -->
 </head>
 
 <body dir="rtl">
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-    <section class="header">
+    <section class="header" style="padding-bottom: 120px;">
 
         <div class="container__not-used">
 
-            <div class="header-top" id="myHeader">
+            <div class="header-top sticky-header" id="myHeader">
                 <div class="container-fluid">
                     <div class="flex" id="navbar">
 
@@ -68,9 +55,7 @@
                                         <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
                                     </ul>
                                 </li>
-                                <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
                                 <li><a href="about.html">عن المنصة</a></li>
-                                <!-- <li class="animation start-home"></li> -->
                             </ul>
                             <ul class="secondary-list">
                                 <li>
@@ -106,6 +91,11 @@
                         <div class="mobile-menu">
                             <a href="#_" class="toggleMobileMenu"><i class="fa-solid fa-bars"></i></a>
                             <div class="mobileMenu">
+                                <ul class="d-flex justify-content-center align-items-center white-color">
+                                    <li><a href="user_login.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                                    <li><a href="user_register.html"><i class="fa-solid fa-user-plus"></i></a></li>
+                                    <li><a href="favorite.html"><i class="fa-solid fa-heart"></i></a></li>
+                                </ul>
                                 <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li class="has-submenu">
@@ -113,9 +103,9 @@
                                         <ul class="sub-menu">
                                             <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
                                             <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                            <li id="" class=""><a href="service - details.html" class="">تفاصيل الخدمة</a></li>
                                         </ul>
                                     </li>
-                                    <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
                                     <li class="has-submenu">
                                         <a href="seller-search.html">الخبراء</a>
                                         <ul class="sub-menu">
@@ -131,6 +121,36 @@
 
                     </div>
                 </div>
+
+                <!-- <div class="cart-container">
+
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="cart-post-img">
+                                    <img src="images/post-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 ">
+                                <div class="ct-post-title">ترجمة ملفات من اللغة العربية إلى الإنجليزية</div>
+
+                                <div class="ct-date row">
+                                    <span class="col-6 ct-delivery inline-icon">
+                                        <p>التسليم:</p>
+                                        <p class="bold">3-2 أيام</p>
+                                    </span>
+                                    <span class="col-6 ct-time inline-icon">
+                                        <i class="fa-solid fa-clock "></i>
+                                        <p class="bold">منذ ساعتين</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-2 remove-post">إزالة</div>
+                        </div>
+                    </div>
+
+                </div> -->
+
             </div>
 
             <div class="header-bottom hero-body container">
@@ -139,7 +159,7 @@
                     <p>أعمل مع نخبة من المتميزين والخبراء للحصول على أفضل النتائج بأقل وقت ومال</p>
                     <div class="inputs">
 
-                        <a href="#_" class="btn search-btn">بحث</a>
+                        <a href="#_" class="btn search-btn ">بحث</a>
 
                         <div href="#_" class="btn service-btn wrapper-dropdown" tabindex="1" id="ddList">
                             <span>الخدمات</span>
@@ -151,218 +171,216 @@
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
 
-                        <input type="text" placeholder="البحث عن..." class="search-field">
+                        <input type="text " placeholder="البحث عن... " class="search-field ">
 
                     </div>
                 </div>
-                <div class="img-content">
-                    <img src="images/bg-img.png" alt="">
+                <div class="img-content ">
+                    <img src="images/bg-img.png " alt=" ">
                 </div>
             </div>
 
+            <a href="#service-section" class="row w-100 d-block mouse-wrapper">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+
         </div>
+
     </section>
 
 
-    <div class="main containerx">
+    <div class="main container">
 
         <!-- Services -->
-        <div class="service-section">
-            <h1 class="title">خدماتنا</h1>
-            <p class="sub-title">كافة الخدمات الإبداعية والاحترافية لتطوير وتنمية أعمالك</p>
+        <div class="service-section" id="service-section">
+            <h1 class="title sm-heading">خَدَماتُنا</h1>
+            <p class="sub-title sm-sub-heading">كافة الخدمات الإبداعية والاحترافية لتطوير وتنمية أعمالك</p>
             <div class="service-category-container">
                 <div class="service-category-item">
                     <div class="category-card">
-                        <img src="images/editing.png">
+                        <img src="images/editing.png ">
                         <div class="img-overlay"></div>
                         <a href="#_" class="category-btn">التدقيق اللغوي</a>
                     </div>
                 </div>
                 <div class="service-category-item">
                     <div class="category-card">
-                        <img src="images/translation.png" alt="">
+                        <img src="images/translation.png" alt=" ">
                         <div class="img-overlay"></div>
                         <a href="#_" class="category-btn">الترجمة</a>
                     </div>
                 </div>
-                <div class="service-category-item">
-                    <div class="category-card">
-                        <img src="images/grammar.png" alt="">
-                        <div class="img-overlay"></div>
+                <div class="service-category-item ">
+                    <div class="category-card ">
+                        <img src="images/grammar.png" alt=" ">
+                        <div class="img-overlay "></div>
                         <a href="#_" class="category-btn">التشكيل</a>
                     </div>
                 </div>
-                <div class="service-category-item">
-                    <div class="category-card">
-                        <img src="images/content_writing.png" alt="">
-                        <div class="img-overlay"></div>
+                <div class="service-category-item ">
+                    <div class="category-card ">
+                        <img src="images/content_writing.png" alt=" ">
+                        <div class="img-overlay "></div>
                         <a href="#_" class="category-btn">صياغة المحتوى</a>
                     </div>
                 </div>
                 <div class="service-category-item">
                     <div class="category-card">
                         <img src="images/others.png" alt="">
-                        <div class="img-overlay"></div>
-                        <a href="#_" class="category-btn">أخرى...</a>
+                        <div class="img-overlay "></div>
+                        <a href="#_" class="category-btn ">أخرى...</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Featured Services -->
-        <div class="featured-service-section">
-            <h1 class="title">أكثر الخدمات طلباً</h1>
-            <p class="sub-title">تقديم خدمات ذات طابع فريد من نوعه بدقة عالية وسرعة في الأداء</p>
-            <!-- <div class="featured-service-category-container"> -->
-            <div class="row justify-content-center sellers containerx sellers-container" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+        <div class="featured-service-section ">
+            <h1 class="title sm-heading">أكثر الخدمات طلباً</h1>
+            <p class="sub-title sm-sub-heading">تقديم خدمات ذات طابع فريد من نوعه بدقة عالية وسرعة في الأداء</p>
+            <div id="services" class="sellers sellers-container" data-slick='{"slidesToShow ": 3, "slidesToScroll ": 1}'>
 
                 <!-- card 1 -->
-                <div>
-                    <div class="post-card ">
+                <div class="post-card">
 
-                        <a href="projects - details.html" class="post-header">
-                            <img src="images/post-1.jpg">
+                    <a href="projects - details.html " class="post-header">
+                        <img src="images/post-1.jpg">
+                    </a>
+
+                    <div class="post-body">
+                        <a href="buyer.html" class="user-img">
+                            <img src="images/user-2(circle).png">
                         </a>
 
-                        <div class="post-body">
-                            <a href="buyer.html" class="user-img">
-                                <img src="images/user-2(circle).png">
-                            </a>
-
-                            <div class="post-info">
-                                <div class="flex">
-                                    <a href="buyer.html" class="name">محمد الشهراني</a>
-                                    <a href="#" class="bookmark">
-                                        <i class="fa-solid fa-bookmark"></i>
-                                    </a>
-                                </div>
-                                <a href="projects - details.html" class="post-title">ترجمة ملفات من العربية إلى الإنجليزية</a>
-                                <!-- <div class="post-date">
-                                    <span class="date"><p>التسليم:</p><p class="delivery-time">3-1 أيام</p></span>
-                                    <span class="time"><p><i class="fa-solid fa-clock"></i></p><p class="post-time">منذ ساعة</p></span>
-                                </div> -->
+                        <div class="post-info">
+                            <div class="flex">
+                                <a href="buyer.html" class="name">محمد الشهراني</a>
+                                <a href="#_" class="bookmark">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </a>
                             </div>
+                            <a href="projects - details.html" class="post-title">ترجمة ملفات من العربية إلى الإنجليزية</a>
+                        </div>
 
-                            <div class="post-footer">
-                                <div class="post-date">
-                                    <span class="date">
-                                        <p>التسليم:</p>
-                                        <p class="delivery-time">3-2 أيام</p>
-                                    </span>
-                                    <span class="time">
-                                        <i class="fa-solid fa-clock"></i>
-                                        <p class="post-time">منذ ساعتين</p>
-                                    </span>
-                                </div>
-                                <div class="tag">
-                                    <span class="tag-type">
+                        <div class="post-footer">
+                            <div class="post-date">
+                                <span class="date">
+                                    <p>التسليم:</p>
+                                    <p class="delivery-time">3-2 أيام</p>
+                                </span>
+                                <span class="time">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <p class="post-time">منذ ساعتين</p>
+                                </span>
+                            </div>
+                            <div class="tag">
+                                <span class="tag-type">
                                         <i class="fa-solid fa-tag"></i>
                                         <p class="post-tag">تدقيق</p>    
                                     </span>
-                                    <p class="service-price"><span class="from">30</span> ريال - <span class="to">90</span> ريال</p>
-                                </div>
+                                <p class="service-price"><span class="from">30</span> ريال - <span class="to">90</span> ريال</p>
                             </div>
                         </div>
-
                     </div>
-                </div>
 
+                </div>
+                <!-- card-end -->
 
                 <!-- card 2 -->
-                <div>
-                    <div class="post-card ">
+                <div class="post-card">
 
-                        <a href="projects - details.html" class="post-header">
-                            <img src="images/post-3.jpg">
+                    <a href="projects - details.html" class="post-header">
+                        <img src="images/post-3.jpg">
+                    </a>
+
+                    <div class="post-body">
+                        <a href="buyer.html" class="user-img">
+                            <img src="images/user-2(circle).png">
                         </a>
 
-                        <div class="post-body">
-                            <a href="buyer.html" class="user-img">
-                                <img src="images/user-2(circle).png">
-                            </a>
-
-                            <div class="post-info">
-                                <div class="flex">
-                                    <a href="buyer.html" class="name">صالح العلي</a>
-                                    <a href="#" class="bookmark">
-                                        <i class="fa-solid fa-bookmark"></i>
-                                    </a>
-                                </div>
-                                <a href="projects - details.html" class="post-title">مطلوب تدقيق وتنسيق بحث علمي</a>
+                        <div class="post-info">
+                            <div class="flex">
+                                <a href="buyer.html" class="name">صالح العلي</a>
+                                <a href="#" class="bookmark">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </a>
                             </div>
+                            <a href="projects - details.html" class="post-title">مطلوب تدقيق وتنسيق بحث علمي</a>
+                        </div>
 
-                            <div class="post-footer">
-                                <div class="post-date">
-                                    <span class="date">
+                        <div class="post-footer">
+                            <div class="post-date">
+                                <span class="date">
                                         <p>التسليم:</p>
                                         <p class="delivery-time">5-3 أيام</p>
                                     </span>
-                                    <span class="time">
+                                <span class="time">
                                         <i class="fa-solid fa-clock"></i>
                                         <p class="post-time">منذ 3 ساعات</p>
                                     </span>
-                                </div>
-                                <div class="tag">
-                                    <span class="tag-type">
+                            </div>
+                            <div class="tag">
+                                <span class="tag-type">
                                         <i class="fa-solid fa-tag"></i>
                                         <p class="post-tag">تدقيق</p>    
                                     </span>
-                                    <p class="service-price"><span class="from">50</span> ريال - <span class="to">120</span> ريال</p>
-                                </div>
+                                <p class="service-price"><span class="from">50</span> ريال - <span class="to">120</span> ريال</p>
                             </div>
-
                         </div>
 
                     </div>
+
                 </div>
+                <!-- card-end -->
 
                 <!-- card 3 -->
-                <div>
-                    <div class="post-card ">
+                <div class="post-card">
 
-                        <a href="projects - details.html" class="post-header">
-                            <img src="images/post-2.jpg">
+                    <a href="projects - details.html" class="post-header">
+                        <img src="images/post-2.jpg">
+                    </a>
+
+                    <div class="post-body">
+                        <a href="buyer.html" class="user-img">
+                            <img src="images/user-2(circle).png">
                         </a>
 
-                        <div class="post-body">
-                            <a href="buyer.html" class="user-img">
-                                <img src="images/user-2(circle).png">
-                            </a>
-
-                            <div class="post-info">
-                                <div class="flex">
-                                    <a href="buyer.html" class="name">زياد الصلوي</a>
-                                    <a href="#" class="bookmark">
-                                        <i class="fa-solid fa-bookmark"></i>
-                                    </a>
-                                </div>
-                                <a href="projects - details.html" class="post-title">كتابة محتوى باللغة العربية</a>
+                        <div class="post-info">
+                            <div class="flex">
+                                <a href="buyer.html" class="name">زياد الصلوي</a>
+                                <a href="#" class="bookmark">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </a>
                             </div>
+                            <a href="projects - details.html" class="post-title">كتابة محتوى باللغة العربية</a>
+                        </div>
 
-                            <div class="post-footer">
-                                <div class="post-date">
-                                    <span class="date">
+                        <div class="post-footer">
+                            <div class="post-date">
+                                <span class="date">
                                         <p>التسليم:</p>
                                         <p class="delivery-time">2-1 أيام</p>
                                     </span>
-                                    <span class="time">
+                                <span class="time">
                                         <i class="fa-solid fa-clock"></i>
                                         <p class="post-time">منذ ساعة</p>
                                     </span>
-                                </div>
-                                <div class="tag">
-                                    <span class="tag-type">
+                            </div>
+                            <div class="tag">
+                                <span class="tag-type">
                                         <i class="fa-solid fa-tag"></i>
                                         <p class="post-tag">تدقيق</p>    
                                     </span>
-                                    <p class="service-price"><span class="from">40</span> ريال - <span class="to">70</span> ريال</p>
-                                </div>
+                                <p class="service-price"><span class="from">40</span> ريال - <span class="to">70</span> ريال</p>
                             </div>
-
                         </div>
 
                     </div>
+
                 </div>
+                <!-- card-end -->
 
             </div>
 
@@ -370,41 +388,41 @@
 
         <!-- Featured Experts -->
         <div class="featured-expert">
-            <h1 class="title">فريق متميز من الخبراء</h1>
-
-            <div class="row justify-content-center sellers containerx sellers-container" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            <h1 class="title sm-heading">فريق متميز من الخبراء</h1>
+            <p class="sub-title sm-sub-heading">يتمتع الفريق بقوة الإنتاجية والأداء المتقن ورضا العملاء والمواءمة الإستراتيجية</p>
+            <div id="experts" class="sellers sellers-container" data-slick='{"slidesToShow": 4,"slidesToScroll ": 1}'>
 
                 <!-- Seller 1 -->
-                <div class="pr-15 pl-15">
-                    <div class="seller-card text-center">
-                        <div class="seller-img">
-                            <a href="#_">
-                                <img src="images/user-2(circle).png" alt="" />
+                <div class="pr-15 pl-15 ">
+                    <div class="seller-card text-center ">
+                        <div class="seller-img ">
+                            <a href="#_ ">
+                                <img src="images/user-2(circle).png " alt=" " />
                             </a>
                         </div>
-                        <div class="seller-content">
-                            <h2 class="mb-2">
-                                <a href="seller.html">عبدالرحمن الحاج</a>
-                                <i class="fas fa-check-circle verified" title="Verified"></i>
+                        <div class="seller-content ">
+                            <h2 class="mb-2 ">
+                                <a href="seller.html ">عبدالرحمن الحاج</a>
+                                <i class="fas fa-check-circle verified " title="Verified "></i>
                             </h2>
-                            <div class="seller-hourly-rate">
+                            <div class="seller-hourly-rate ">
                                 <h4>مترجم</h4>
                             </div>
-                            <div class="star-rating">
-                                <i class="fa-solid fa-star empty-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                            <div class="star-rating ">
+                                <i class="fa-solid fa-star empty-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
                             </div>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
+                            <ul class="list-inline ">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-globe-asia "></i>
                                     <span>السعودية</span>
-                                    <i class="fas fa-globe-asia"></i>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-user-shield "></i>
                                     <span>محترف</span>
-                                    <i class="fas fa-user-shield"></i>
                                 </li>
                             </ul>
                         </div>
@@ -412,35 +430,35 @@
                 </div>
 
                 <!-- Seller 2 -->
-                <div class="pr-15 pl-15">
-                    <div class="seller-card text-center">
-                        <div class="seller-img">
-                            <a href="#_">
-                                <img src="images/user-2(circle).png" alt="" />
+                <div class="pr-15 pl-15 ">
+                    <div class="seller-card text-center ">
+                        <div class="seller-img ">
+                            <a href="#_ ">
+                                <img src="images/user-2(circle).png " alt=" " />
                             </a>
                         </div>
-                        <div class="seller-content">
-                            <h2 class="mb-2">
-                                <a href="seller.html">محمد القحطاني</a>
+                        <div class="seller-content ">
+                            <h2 class="mb-2 ">
+                                <a href="seller.html ">محمد القحطاني</a>
                             </h2>
-                            <div class="seller-hourly-rate">
+                            <div class="seller-hourly-rate ">
                                 <h4>صائغ محتوى</h4>
                             </div>
-                            <div class="star-rating">
-                                <i class="fa-solid fa-star empty-star"></i>
-                                <i class="fa-solid fa-star empty-star"></i>
-                                <i class="fa-solid fa-star empty-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                            <div class="star-rating ">
+                                <i class="fa-solid fa-star empty-star "></i>
+                                <i class="fa-solid fa-star empty-star "></i>
+                                <i class="fa-solid fa-star empty-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
                             </div>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
+                            <ul class="list-inline ">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-globe-asia "></i>
                                     <span>السعودية</span>
-                                    <i class="fas fa-globe-asia"></i>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-user-shield "></i>
                                     <span>نشط</span>
-                                    <i class="fas fa-user-shield"></i>
                                 </li>
                             </ul>
                         </div>
@@ -448,36 +466,36 @@
                 </div>
 
                 <!-- Seller 3 -->
-                <div class="pr-15 pl-15">
-                    <div class="seller-card text-center">
-                        <div class="seller-img">
-                            <a href="#_">
-                                <img src="images/user-2(circle).png" alt="" />
+                <div class="pr-15 pl-15 ">
+                    <div class="seller-card text-center ">
+                        <div class="seller-img ">
+                            <a href="#_ ">
+                                <img src="images/user-2(circle).png " alt=" " />
                             </a>
                         </div>
-                        <div class="seller-content">
-                            <h2 class="mb-2">
-                                <a href="seller.html">فيصل الشمري</a>
-                                <i class="fas fa-check-circle verified" title="Verified"></i>
+                        <div class="seller-content ">
+                            <h2 class="mb-2 ">
+                                <a href="seller.html ">فيصل الشمري</a>
+                                <i class="fas fa-check-circle verified " title="Verified "></i>
                             </h2>
-                            <div class="seller-hourly-rate">
+                            <div class="seller-hourly-rate ">
                                 <h4>مدقق نحوي</h4>
                             </div>
-                            <div class="star-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                            <div class="star-rating ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
                             </div>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
+                            <ul class="list-inline ">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-globe-asia "></i>
                                     <span>السعودية</span>
-                                    <i class="fas fa-globe-asia"></i>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-user-shield "></i>
                                     <span>متميز</span>
-                                    <i class="fas fa-user-shield"></i>
                                 </li>
                             </ul>
                         </div>
@@ -485,35 +503,35 @@
                 </div>
 
                 <!-- Seller 4 -->
-                <div class=" pr-15 pl-15">
-                    <div class="seller-card text-center">
-                        <div class="seller-img">
-                            <a href="#_">
-                                <img src="images/user-2(circle).png" alt="" />
+                <div class=" pr-15 pl-15 ">
+                    <div class="seller-card text-center ">
+                        <div class="seller-img ">
+                            <a href="#_ ">
+                                <img src="images/user-2(circle).png " alt=" " />
                             </a>
                         </div>
-                        <div class="seller-content">
-                            <h2 class="mb-2">
-                                <a href="seller.html">عمر الغامدي</a>
+                        <div class="seller-content ">
+                            <h2 class="mb-2 ">
+                                <a href="seller.html ">عمر الغامدي</a>
                             </h2>
-                            <div class="seller-hourly-rate">
+                            <div class="seller-hourly-rate ">
                                 <h4>كاتب محتوى</h4>
                             </div>
-                            <div class="star-rating">
-                                <i class="fa-solid fa-star empty-star"></i>
-                                <i class="fa-solid fa-star empty-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                            <div class="star-rating ">
+                                <i class="fa-solid fa-star empty-star "></i>
+                                <i class="fa-solid fa-star empty-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
                             </div>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
+                            <ul class="list-inline ">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-globe-asia "></i>
                                     <span>السعودية</span>
-                                    <i class="fas fa-globe-asia"></i>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item ">
+                                    <i class="fas fa-user-shield "></i>
                                     <span>متمرس</span>
-                                    <i class="fas fa-user-shield"></i>
                                 </li>
                             </ul>
                         </div>
@@ -524,48 +542,44 @@
         </div>
 
         <!-- Statistics -->
-        <section class="statistics-section">
+        <section class="statistics-section ">
 
             <div class="statistics-container">
 
-                <div class="statistics-element">
+                <div class="statistics-element ">
 
-                    <span class="icon">
-                        <img src="images/delivery-box.png" alt="">
-                        <!-- <i class="fa-solid fa-user"></i> -->
+                    <span class="icon ">
+                        <img src="images/delivery-box.png " alt=" ">
                     </span>
-                    <h1 class="counter">15K</h1>
-                    <p class="element-name">الطلبات المستلمة</p>
+                    <h1 class="counter ">15K</h1>
+                    <p class="element-name ">الطلبات المستلمة</p>
 
                 </div>
-                <div class="statistics-element">
+                <div class="statistics-element ">
 
-                    <span class="icon">
-                        <img src="images/comments.png" alt="">
-                        <!-- <i class="fa-solid fa-star"></i> -->
+                    <span class="icon ">
+                        <img src="images/comments.png " alt=" ">
                     </span>
-                    <h1 class="counter">9K</h1>
-                    <p class="element-name">التعليقات الإيجابية</p>
+                    <h1 class="counter ">9K</h1>
+                    <p class="element-name ">التعليقات الإيجابية</p>
 
                 </div>
-                <div class="statistics-element">
+                <div class="statistics-element ">
 
-                    <span class="icon">
-                        <img src="images/users.png" alt="">
-                        <!-- <i class="fa-solid fa-users-line"></i> -->
+                    <span class="icon ">
+                        <img src="images/users.png " alt=" ">
                     </span>
-                    <h1 class="counter">14K</h1>
-                    <p class="element-name">عدد المستخدمين</p>
+                    <h1 class="counter ">14K</h1>
+                    <p class="element-name ">عدد المستخدمين</p>
 
                 </div>
-                <div class="statistics-element">
+                <div class="statistics-element ">
 
-                    <span class="icon">
-                        <img src="images/deals.png" alt="">
-                        <!-- <i class="fa-solid fa-hand-holding-medical"></i> -->
+                    <span class="icon ">
+                        <img src="images/deals.png " alt=" ">
                     </span>
-                    <h1 class="counter">17K</h1>
-                    <p class="element-name">مجموع المعاملات<br>(المبيعات)</p>
+                    <h1 class="counter ">17K</h1>
+                    <p class="element-name ">مجموع المعاملات<br>(المبيعات)</p>
 
                 </div>
 
@@ -573,15 +587,15 @@
         </section>
 
         <!-- Advertisement -->
-        <section class="ad-section container">
+        <section class="ad-section">
             <div class="ad-container">
-                <div class="ad-content">
+                <div class="ad-content ">
                     <h1>أبحث عن الشخص المناسب والموهوب لأداء مهامك بدقة وكفاءة عالية لرفع مستوع عملك</h1>
                     <p>أنشر إعلانك لمئات من الخبراء والمتميزين وتصفح مختلف السيّر الذاتية</p>
                     <button>ابدأ بطلبك الأن</button>
                 </div>
-                <div class="ad-img">
-                    <img src="images/ad.png" alt="">
+                <div class="ad-img ">
+                    <img src="images/ad.png " alt=" ">
                 </div>
             </div>
         </section>
@@ -590,37 +604,37 @@
 
     <section class="footer">
         <div class="footer-container">
-            <div class="footer-content row">
-                <div class="col-lg-6 col-md-12 col-sm-12 address">
-                    <div class="logo">
-                        <img src="images/website-logo.png" alt="">
+            <div class="footer-content row ">
+                <div class="col-lg-6 col-md-12 col-sm-12 address ">
+                    <div class="logo ">
+                        <img src="images/website-logo.png " alt=" ">
                     </div>
-                    <p id="location-address">عنوان المجمع</p>
-                    <p id="support-email">فريق الدعم</p>
-                    <div class="inputs">
-                        <input type="text" placeholder="أكتب البريد الإلكتروني" class="search-field">
-                        <a href="#_" class="btn search-btn">تسجيل</a>
+                    <p id="location-address ">عنوان المجمع</p>
+                    <p id="support-email ">فريق الدعم</p>
+                    <div class="inputs ">
+                        <input type="text " placeholder="أكتب البريد الإلكتروني " class="search-field ">
+                        <a href="#_ " class="btn search-btn ">تسجيل</a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 flex-row links">
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <ul class="list">
+                <div class="col-lg-6 col-md-12 col-sm-12 flex-row links ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 ">
+                        <ul class="list ">
                             <li>الخدمات</li>
                             <li>عنوان فرعي</li>
                             <li>عنوان فرعي</li>
                             <li>عنوان فرعي</li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <ul class="list">
+                    <div class="col-lg-4 col-md-4 col-sm-6 ">
+                        <ul class="list ">
                             <li>المجتمع</li>
                             <li>عنوان فرعي</li>
                             <li>عنوان فرعي</li>
                             <li>عنوان فرعي</li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <ul class="list">
+                    <div class="col-lg-4 col-md-4 col-sm-6 ">
+                        <ul class="list ">
                             <li>الدعم</li>
                             <li>الأسئلة الشائعة</li>
                             <li>شروط الإستخدام</li>
@@ -629,32 +643,28 @@
                     </div>
                 </div>
             </div>
-            <div class="copywrite flex">
-                <p class="content">الحقوق محفوظة - مجمع الملك سلمان العالمي للغة العربية &#169; 2022</p>
-                <div class="social-media flex">
-                    <a href="#_"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#_"><i class="fa-brands fa-youtube"></i></i></a>
-                    <a href="#_"><i class="fa-brands fa-facebook-square"></i></i></a>
-                    <a href="#_"><i class="fa-brands fa-twitter-square"></i></a>
+            <div class="copywrite flex ">
+                <p class="content ">الحقوق محفوظة - مجمع الملك سلمان العالمي للغة العربية &#169; 2022</p>
+                <div class="social-media flex ">
+                    <a href="#_ "><i class="fa-brands fa-linkedin "></i></a>
+                    <a href="#_ "><i class="fa-brands fa-youtube "></i></i></a>
+                    <a href="#_ "><i class="fa-brands fa-facebook-square "></i></i></a>
+                    <a href="#_ "><i class="fa-brands fa-twitter-square "></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <script type='text/javascript' src='https://themebing.com/wp/prolancer/wp-content/themes/prolancer/assets/js/bootstrap.min.js?ver=1.2.8' id='bootstrap-js'></script> -->
-
-    <!-- Swiper JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
-
-    <!-- jQuery if needed -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <script type='text/javascript' src='assets/js/jquery.min.js' id='jquery-core-js'></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <!-- Plugin - slicker -->
     <script type='text/javascript' src='assets/js/plugins.js' id='jquery-core-js'></script>
     <script type='text/javascript' src='assets/js/plugin.js' id='jquery-core-js'></script>
+    <!-- Script -->
+    <script type='text/javascript' src="assets/js/script.js"></script>
+    <!-- <script type='text/javascript' src="localStorage.js"></script> -->
 
 </body>
 

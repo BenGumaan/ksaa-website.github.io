@@ -11,22 +11,23 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <!-- Bootstrap CSS -->
     <link rel='stylesheet' id='bootstrap-css' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
 
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <!-- Custom CSS Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <!-- The 2 most important css styles -->
-    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/plugin-customized.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='prolancer-plugn-css' href='assets/css/slick-slider.css' type='text/css' media='all' />
+    <!--  Slick CSS -->
+    <link rel='stylesheet' href='assets/css/slick-slider.css' type='text/css' media='all' />
 
     <title>منصة خدمات اللغة العربية</title>
 
 </head>
 
 <body dir="rtl">
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
     <!-- Preloader -->
     <div id="preloader" style="display: none;">
         <div class="spinner">
@@ -39,7 +40,7 @@
 
     <section class="header">
 
-        <div class="header-top" id="myHeader">
+        <div class="header-top sticky-header" id="myHeader">
             <div class="container-fluid">
                 <div class="flex" id="navbar">
 
@@ -63,9 +64,7 @@
                                     <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
                                 </ul>
                             </li>
-                            <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
                             <li><a href="about.html">عن المنصة</a></li>
-                            <!-- <li class="animation start-home"></li> -->
                         </ul>
                         <ul class="secondary-list">
                             <li>
@@ -97,35 +96,70 @@
                         </ul>
                     </nav>
 
-                        <!-- Mobile Menu -->
-                        <div class="mobile-menu">
-                            <a href="#_" class="toggleMobileMenu"><i class="fa-solid fa-bars"></i></a>
-                            <div class="mobileMenu">
-                                <ul>
-                                    <li><a href="index.html">الرئيسية</a></li>
-                                    <li class="has-submenu">
-                                        <a href="projects.html">المشاريع</a>
-                                        <ul class="sub-menu">
-                                            <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
-                                            <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
-                                        </ul>
-                                    </li>
-                                    <!-- <li><a href="seller-search.html">الخبراء</a></li> -->
-                                    <li class="has-submenu">
-                                        <a href="seller-search.html">الخبراء</a>
-                                        <ul class="sub-menu">
-                                            <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
-                                            <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
-                                            <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">عن المنصة</a></li>
-                                </ul>
-                            </div>
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu">
+                        <a href="#_" class="toggleMobileMenu"><i class="fa-solid fa-bars"></i></a>
+                        <div class="mobileMenu">
+                            <ul class="d-flex justify-content-center align-items-center white-color">
+                                <li><a href="user_login.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                                <li><a href="user_register.html"><i class="fa-solid fa-user-plus"></i></a></li>
+                                <li><a href="favorite.html"><i class="fa-solid fa-heart"></i></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li class="has-submenu">
+                                    <a href="projects.html">المشاريع</a>
+                                    <ul class="sub-menu">
+                                        <li id="" class=""><a href="projects.html" class="">المشاريع</a></li>
+                                        <li id="" class=""><a href="projects - details.html" class="">تفاصيل المشروع</a></li>
+                                        <li id="" class=""><a href="service - details.html" class="">تفاصيل الخدمة</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="seller-search.html">الخبراء</a>
+                                    <ul class="sub-menu">
+                                        <li id="" class=""><a href="seller-search.html" class="">صفحة البحث عن مقدمي الخدمة</a></li>
+                                        <li id="" class=""><a href="seller.html" class="">صفحة مقدم الخدمة</a></li>
+                                        <li id="" class=""><a href="buyer.html" class="">صفحة مقدم الطلب</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">عن المنصة</a></li>
+                            </ul>
                         </div>
+                    </div>
 
                 </div>
             </div>
+
+            <!-- <div class="cart-container">
+
+                <div class="cart-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="cart-post-img">
+                                <img src="images/post-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-8 ">
+                            <div class="ct-post-title">ترجمة ملفات من اللغة العربية إلى الإنجليزية</div>
+
+                            <div class="ct-date row">
+                                <span class="col-6 ct-delivery inline-icon">
+                                    <p>التسليم:</p>
+                                    <p class="bold">3-2 أيام</p>
+                                </span>
+                                <span class="col-6 ct-time inline-icon">
+                                    <i class="fa-solid fa-clock "></i>
+                                    <p class="bold">منذ ساعتين</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-2 remove-post">إزالة</div>
+                    </div>
+                </div>
+
+            </div> -->
+
         </div>
 
     </section>
@@ -609,12 +643,12 @@
                                 </div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <span>السعودية</span>
                                         <i class="fas fa-globe-asia"></i>
+                                        <span>السعودية</span>
                                     </li>
                                     <li class="list-inline-item">
-                                        <span>محترف</span>
                                         <i class="fas fa-user-shield"></i>
+                                        <span>محترف</span>
                                     </li>
                                 </ul>
                             </div>
@@ -645,12 +679,12 @@
                                 </div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <span>السعودية</span>
                                         <i class="fas fa-globe-asia"></i>
+                                        <span>السعودية</span>
                                     </li>
                                     <li class="list-inline-item">
-                                        <span>نشط</span>
                                         <i class="fas fa-user-shield"></i>
+                                        <span>نشط</span>
                                     </li>
                                 </ul>
                             </div>
@@ -682,12 +716,12 @@
                                 </div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <span>السعودية</span>
                                         <i class="fas fa-globe-asia"></i>
+                                        <span>السعودية</span>
                                     </li>
                                     <li class="list-inline-item">
-                                        <span>متميز</span>
                                         <i class="fas fa-user-shield"></i>
+                                        <span>متميز</span>
                                     </li>
                                 </ul>
                             </div>
@@ -718,12 +752,12 @@
                                 </div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <span>السعودية</span>
                                         <i class="fas fa-globe-asia"></i>
+                                        <span>السعودية</span>
                                     </li>
                                     <li class="list-inline-item">
-                                        <span>متمرس</span>
                                         <i class="fas fa-user-shield"></i>
+                                        <span>متمرس</span>
                                     </li>
                                 </ul>
                             </div>
@@ -791,11 +825,15 @@
         </div>
     </section>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <script type='text/javascript' src='assets/js/jquery.min.js' id='jquery-core-js'></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Plugin - slicker -->
     <script type='text/javascript' src='assets/js/plugins.js' id='jquery-core-js'></script>
     <script type='text/javascript' src='assets/js/plugin.js' id='jquery-core-js'></script>
+    <!-- Script -->
+    <script type='text/javascript' src="assets/js/script.js"></script>
 
 
 </body>
